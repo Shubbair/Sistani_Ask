@@ -11,5 +11,7 @@ genai.configure(api_key=os.environ.get('API_KEY'))
 qa_data = open('Sistani_QA.json')
 qa_data = json.load(qa_data)
 
-data_frame = pd.DataFrame(qa_data)
-data_frame.head()
+print(qa_data[0].keys())
+
+# data_frame = pd.DataFrame(qa_data)
+# data_frame.head()
